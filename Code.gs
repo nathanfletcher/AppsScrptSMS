@@ -7,7 +7,7 @@ function sendToOne(namedValues){
   var sender = namedValues.From;
   var myMessage = namedValues.Message;
   var reciever = namedValues.recepient;
-  prospect(formatPhoneNumber(number),myMessage,'OSU Youth');
+  prospect(formatPhoneNumber(number),myMessage,'{GroupName}');
   
   //sendMail(myMessage);
   
@@ -28,7 +28,7 @@ function sendSMS_smsghAccount(number,message,senderID){
 
 function testFreeAccount(){
   var message = 'you There?';
-  sendSMS_smsghAccount('233209708141',message,'Kobby');
+  sendSMS_smsghAccount('2332889021',message,'Kobby');
 }
 
 //This formats the input to become a proper phone number
