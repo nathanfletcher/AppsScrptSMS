@@ -17,12 +17,12 @@ function sendToOne(namedValues){
 
 /*Sends SMS through MPower Awesomely*/
 function sendSMS(number,message,senderID){
-  return UrlFetchApp.fetch('https://api.smsgh.com/v3/messages/send?From='+senderID+'&To=%2B'+number+'&Content='+message+'&ClientId=zoyzbbdz&ClientSecret=arliiztt');
+  return UrlFetchApp.fetch('https://api.smsgh.com/v3/messages/send?From='+senderID+'&To=%2B'+number+'&Content='+message+'&ClientId=[clientID]&ClientSecret=[clientSecret]');
   
 }
 
 function sendSMS_smsghAccount(number,message,senderID){
-  return UrlFetchApp.fetch('https://api.smsgh.com/v3/messages/send?From='+senderID+'&To=%2B'+number+'&Content='+message+'&ClientId=ezulsolf&ClientSecret=clwtdjer');
+  return UrlFetchApp.fetch('https://api.smsgh.com/v3/messages/send?From='+senderID+'&To=%2B'+number+'&Content='+message+'&ClientId=[clientID]&ClientSecret=[clientSecret]');
   
 }
 
