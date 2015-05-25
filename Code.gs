@@ -28,7 +28,9 @@ function testSMSAccount(){
   //233288902167 is just a dummy phone number assume country code is 233
 }
 
-//This formats the input to become a proper phone number
+/*This formats the input to become a proper phone number
+You could actually extend this funtion with [libphonenumber]
+you know, the library WhatsApp uses for phone numbers... okay I'll stop lol*/
 function formatPhoneNumber(number){
   Logger.log(number);
   var processingNumber = number;
