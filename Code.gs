@@ -21,14 +21,11 @@ function sendSMS(number,message,senderID){
   
 }
 
-function sendSMS_smsghAccount(number,message,senderID){
-  return UrlFetchApp.fetch('https://api.smsgh.com/v3/messages/send?From='+senderID+'&To=%2B'+number+'&Content='+message+'&ClientId=[clientID]&ClientSecret=[clientSecret]');
-  
-}
 
-function testFreeAccount(){
+function testSMSAccount(){
   var message = 'you There?';
-  sendSMS_smsghAccount('2332889021',message,'Kobby');
+  sendSMS_smsghAccount('233288902167',message,'Kobby');
+  //233288902167 is just a dummy phone number assume country code is 233
 }
 
 //This formats the input to become a proper phone number
